@@ -1,6 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+  --bg: #1A0B2E;
+  --white:#ffff;
+  
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+}
+}
+.header {
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    width: 100%;
+}
+ .nav-container{
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1600px;
+    width:min(1100px, calc(100% - 40px)); */
+    margin:0 auto;
+    padding: 16px 200px;
+    background-color:var(--bg);
+ }
+.nav-links{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    font-size: 16px;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-links a{
+    text-decoration: none;
+}
+h2{
+    font-weight:800;
+    font-size:46px;
+    letter-spacing:.3px;
+}
+.white{
+    color: white;
+}
+.pink{
+   background:linear-gradient(90deg, #ff2db7, #6e56ff);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;  
+}
+.btn-primary{
+    background: linear-gradient(90deg, #ffb800 0%, #ff2db7 55%, #7a5cff 100%);
+    box-shadow: 0 12px 35px rgba(255,45,183,.22);
+    border-radius: 999px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:12px 18px;
+    border:1px solid transparent;
+    font-weight:600;
+    font-size:14px;
+}
+
+.hero-container{
+   
+}
+
