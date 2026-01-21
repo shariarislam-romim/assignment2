@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
   --bg: #1A0B2E;
+  --bg2: #230E3D;
   --white:#ffff;
   --green:#00FF85;
 .inter {
@@ -138,11 +139,13 @@ h2{
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 80px;
  }
- .about-title{
+ .bold-title{
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 20px;
+    text-align: center;
  }
  .text, .sub-text{
     font-size: 15px;
@@ -178,3 +181,49 @@ hr{
     font-size: 12px;
     text-transform: uppercase;
 }
+.choose{
+    padding: 50px 0;
+    background-color: var(--bg2);
+}
+.choose-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 90%;
+}
+.choose-grid{
+    display: grid;
+    grid-template-columns:  0.7fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    margin-top: 20px;
+}
+.content{
+    background-color: rgba(53, 17, 101, 0.4);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 40px;
+    padding: 40px;
+    /* display: flex;
+    flex-direction: column; */
+}
+.tall{
+    grid-row: span 2;
+}
+.short{
+    grid-column: span 2;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.details{
+    font-size: 13.5px;
+    line-height: 1.5;
+    /* margin: 0; */
+}
+
