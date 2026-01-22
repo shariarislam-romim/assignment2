@@ -67,7 +67,7 @@ h2{
     font-size:14px;
 }
 .btn:hover{
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 .hero{
    background: url("/assets/hero-bg.png") center;
@@ -105,6 +105,7 @@ h2{
     font-weight:800;
     padding:6px 12px;
     box-shadow: 0 5px 5px rgba(144,255,122,35);
+    animation: moveUpDown 2s ease-in-out infinite;
 }
 .hero h1{
     font-size:48px;
@@ -202,8 +203,6 @@ hr{
     border: 1px solid rgba(255,255,255,.06);
     border-radius: 40px;
     padding: 40px;
-    /* display: flex;
-    flex-direction: column; */
 }
 .tall{
     grid-row: span 2;
@@ -224,7 +223,6 @@ hr{
 .details{
     font-size: 14px;
     line-height: 1.5;
-    /* margin: 0; */
 }
 .feature, .host{
     padding: 80px 0;
@@ -241,13 +239,13 @@ hr{
    overflow: hidden;
    margin-top: 35px;
 }
-.vedio{
+.video{
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     margin-bottom: 24px;   
 }
-.vedio iframe{
+.video iframe{
     position: absolute;
     top: 0;
     left: 0;
@@ -281,6 +279,7 @@ hr{
     align-items: center;
     gap: 40px;
     padding: 50px;
+    margin-top: 40px;
 }
 .host-img{
     width: 200px;
@@ -352,7 +351,15 @@ hr{
 .hamburger-menu{
     display: none;
 }
-@media screen and (max-width: 768px) {
+@keyframes moveUpDown{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+@media screen and (max-width:576px) {
     body{
         overflow-x: hidden;
         width: 100%;
@@ -377,7 +384,6 @@ hr{
     .hero,
     .footer{
         background-size: 100% 100%;
-        /* width: 100%;  */
     }
     .hero-img{
         background-size: 200px
@@ -389,6 +395,10 @@ hr{
         font-size: 10px;
         top: 90px;
         right: 90px; 
+    }
+    .star{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     .choose-grid,
     .card-box{
@@ -418,3 +428,26 @@ hr{
     }
     
 } 
+
+@media screen and (max-width:992px) {
+    .hero,
+    .footer{
+        background-size: 100% 100%;
+    }
+    .nav-container{
+        padding: 10px 40px;
+    }
+    .hero-img{
+        background-size: 300px
+    }
+    .hero-img img{
+        width: 80px;
+    }
+    .choose-grid,
+    .card-box{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+}
