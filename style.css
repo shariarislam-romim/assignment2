@@ -70,7 +70,7 @@ h2{
     transform: translateY(-5px);
 }
 .hero{
-   background: url("/assets/hero-bg.png") center;
+   background: url("./assets/hero-bg.png") center;
    background-size: cover;
    width: 100%;
    min-height: 80vh;
@@ -81,7 +81,7 @@ h2{
     text-align: center;
 }
 .hero-img{
-    background: url("/assets/hero-circle.png") center no-repeat;
+    background: url("./assets/hero-circle.png") center no-repeat;
     width:370px;
     height:370px;
     display:flex;
